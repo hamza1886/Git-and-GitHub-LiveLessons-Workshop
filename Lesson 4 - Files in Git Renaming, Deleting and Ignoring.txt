@@ -1,0 +1,123 @@
+$ mkdir web2
+
+$ cd web2
+
+$ touch index.html index.css
+
+$ git status [it does not work because its not a git repo]
+
+$ git init
+
+$ git status [it works now]
+
+$ rm .\index.html
+
+$ rm .\index.css
+
+[leaves the repo empty]
+
+$ cd ..\web1
+
+$ ls
+
+Renaming Method 1(Using Git):
+
+$ git mv index.html home.htm
+
+$ ls
+
+$ git s
+
+$ git status
+
+$ git commit -m "Renamed home page to follow corporate guidelines"
+
+Renaming Method 2:
+
+$ mv index.css home.css
+
+$ git s 
+
+$ git status
+
+$ git add -A [-A means all files] [Works for <version 2 of git]
+
+$ git add . [Works for =>version 2 of git]
+
+$ git status
+
+NB: Git figured we are renaming of a file because it run a program on the contents of both files and return a similarity index and realise they are same. Similarity index ranges from 0-1.
+if SI = 0 means both files having nothing in common
+if SI = 1 means both files are the same character to character
+if SI > 0.5 means both files are similar so probably renaming it 
+if SI < 0.5 means both files are substantialy different
+
+$ git commit -m "Renamed stylesheet for the home page"
+
+$ git s
+
+
+Deleting a file method 1 (Using Git):
+
+$ git rm contact.html
+
+$ git s
+
+$ git commit -m "Deleted contact us page"
+
+
+Deleting a file method 2:
+
+$ rm contact.css
+
+$ git s
+
+$ git add -A 
+
+$ git s
+
+$ git commit -m "Deleted Styltsheet for contact us page"
+
+
+Ignoring files:
+
+$ touch test.log
+
+$ git s
+
+$ vi .gitignore
+
+$ git s
+
+$ ls
+
+$ git add .
+
+$ git commit -m "Added log file and .DS_Store to .gitignore" 
+
+
+Other methods:
+
+$ git config --global core.excludesfile ~/.gitignore
+
+Hide .gitignore files [you don't create .gitignore files]:
+
+$ open .git
+
+$ cat .git/info/exclude
+
+
+.gitignore precedence
+
+
+
+
+
+
+
+
+
+ 
+
+
+

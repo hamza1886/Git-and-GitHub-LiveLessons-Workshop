@@ -1,0 +1,22 @@
+$ git status
+
+$ git init web1 [web1 is an example project]
+
+$ touch index.html
+
+$ git status
+
+$ git add index.html or .
+
+$ git status 
+
+$ git commit -m "Added home page"
+
+$ git status
+
+$ git log
+
+$ git log --oneline
+
+$ git log --oneline --decorate
+

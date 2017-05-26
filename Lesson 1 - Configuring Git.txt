@@ -1,0 +1,22 @@
+Levels of Configuration:
+
+ --local
+ --global
+ --system
+
+$ git config --global user.name "username"
+
+$ git config --global user.email email@mail.com
+
+$ git config --global color.ui true
+
+$ git config --global core.autocrlf true
+
+$ git config --global alias.s "status -s"
+
+$ git config --global alias.lg "log --oneline --all --graph --decorate"
+
+$ git status
+
+
+
