@@ -1,4 +1,4 @@
-Create a new repository online with the same name as your local project folder. The push the local project to the remote/online repository.
+Create a new repository online with the same name as your local project folder. Then, push the local project to the remote/online repository.
 
 $ git remote add origin https://github.com/maaddae/web1.git
 
